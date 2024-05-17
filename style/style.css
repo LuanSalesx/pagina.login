@@ -1,0 +1,118 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #222;
+}
+header{
+    text-align: center;
+}
+header h1{
+    color: #f2f2f2;
+    font-size: 45px;
+    text-shadow: 7px 0px 1px blue;
+    animation-name: textcolor;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+header hr{
+    background: linear-gradient(50deg, #111, white, #111);
+}
+header .hr2{
+    margin-bottom: 60px;
+}
+input{
+    text-align: justify;
+    width: 50vh;
+    border-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px 2px blue;
+    padding-left: 7px;
+    animation-name: animacao;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+button,
+select{
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px 4px blue;
+    animation-name: animacao;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    cursor: pointer;
+}
+select option{
+    background-color: #444;
+    color: white;
+}
+button:hover{
+    background-color: rgb(123, 123, 233);
+    color: white;
+}
+.container-dados{
+    background-color:#333;
+    border-radius: 8px;
+    margin: auto;
+    width: 57vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 5px blue;
+    animation-name: animacao;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    
+}
+footer{
+    margin-top: 90px;
+    background-color: #222;
+    width: 100%;
+    margin-bottom: 0;
+}
+footer .end-text{
+    color: white;
+    text-align: center;
+}
+footer  a{
+    color: cadetblue;
+}
+@keyframes textcolor{
+    50%{text-shadow: 7px 0px 1px red}
+    60%{text-shadow: 7px 0px 1px yellow}
+    70%{text-shadow: 7px 0px 1px green}
+    80%{text-shadow: 7px 0px 1px blue}
+    90%{text-shadow: 7px 0px 1px orange}
+    100%{text-shadow: 7px 0px 1px pink}
+}
+@keyframes animacao{
+    50%{box-shadow: 0px 0px 5px 5px red}
+    60%{box-shadow: 0px 0px 5px 5px yellow}
+    70%{box-shadow: 0px 0px 5px 5px green}
+    80%{box-shadow: 0px 0px 5px 5px blue}
+    90%{box-shadow: 0px 0px 5px 5px orange}
+    100%{box-shadow: 0px 0px 5px 5px pink}
+}
+
+
+
+@media(min-width:412px) and (max-width:823px) {
+    header h1{
+        font-size: 30px;
+    }
+    .container-dados{
+        width: auto;
+    }
+    input{
+        width: auto;
+        margin: 10px;
+    }
+    *{
+        margin: 0;
+    }
+    button,
+    select{
+        margin: 10px;
+    }
+}
